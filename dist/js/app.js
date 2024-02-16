@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       /* ######## JS Animations Start ######## */
       /* #################################### */
 
-
+      gsap.set("#loader", { opacity: 0 })
+      
       
 
 
