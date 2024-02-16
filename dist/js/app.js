@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-      mm.add("(max-width: 1536px)", () => {
+      mm.add("(min-width: 641px)", () => {
 
 
         gsap.set("#logo", { opacity: 0, scale: 0 })
@@ -119,39 +119,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       
       
 
-      mm.add("(max-width: 2000px)", () => {
-
-
-        gsap.set("#logo", { opacity: 0, scale: 0 })
-        gsap.set("#logo-rms", { opacity: 0, scale: 0 })
-        gsap.set("#logo-rotana", { x: 0 ,opacity: 0, scale: 0 })
-        gsap.set("#advertise-with-us", { x: 350, opacity: 0, scale: 0 })
-        gsap.set("#top-logo", { y: -50 ,opacity: 0 })
-        gsap.set("#footer", { y: 50 ,opacity: 0 })
-        gsap.set("#sales", { x: -100 ,opacity: 0 })
-        gsap.set("#video", { x: 500 ,opacity: 0 })
-        gsap.set(".logo-sm", { scale: 0})
-
-
-        gsap.timeline()
-        .to("#logo-rms", 0.5,  { opacity: 1, scale: 1})
-        .to("#logo-rms", 0.5, { x: -320}, "one+=1")
-        .to("#logo-rotana", 0.5, {x: 200, opacity: 1, scale: 1}, "one+=0.95")
-        .to("#logo-rms", 0.5, { x: -1500, opacity: 0}, "two+=1")
-        .to("#logo-rotana", 0.5, { x: 1500, opacity: 0}, "two+=1")
-        .to("#logo", 1.5, { scale: 1, opacity: 1, ease: "bounce.out"}, "three-=0.5")
-        .to("#logo", 0.5, { x: -300,scale: 1, opacity: 1}, "four+=1")
-        .to("#advertise-with-us", 0.5, { x: 100, scale: 1, opacity: 1}, "four+=1")
-        .to("#logo", 0.3, { x: -500, scale: 0.5, opacity: 0}, "five+=1")
-        .to("#advertise-with-us", 0.5, { x: -550, scale: 1, opacity: 1}, "five+=1")
-        .to("#top-logo", 0.5, { y: 0, opacity: 1}, "five+=1")
-        .to("#footer", 0.5, { y: 0, opacity: 1}, "five+=1")
-        .to("#sales", 0.5, { x: 0, opacity: 1}, "five+=1")
-        .to("#video", 0.5, { x: 0, opacity: 1}, "five+=1")
-        .to(".logo-sm", 1,  { scale: 1, ease: "bounce.out", stagger: 0.3}, "five+=2")
-  
-
-      });
 
 
       /* #################################### */
